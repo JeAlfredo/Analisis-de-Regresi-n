@@ -1,0 +1,12 @@
+#Trabajo en clase
+
+facultad <- c("economia", "ingenieria", "arquitectiura", "derecho")
+licenciatura <- c("actuaria", "ing civil", "arquitectura", "derecho")
+calificacion_alumnos <- c(6,4,10,8)
+class(facultad)
+class(licenciatura)
+class(calificacion_alumnos)
+rm(facultad, licenciatura)
+base1 <- data.frame (calificacion_alumnos) 
+View(base1)#Ver la base de datos ls(base1)
+pie(calificacion_alumnos,main= "Gráfica de pie de calificacíon de alumnos", sub = "Fuente: Facultad de economía", col = c("blue", "red", "pink", "yellow"), radius = 1.2, clockwise = FALSE, lty=3)
