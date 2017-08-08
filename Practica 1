@@ -1,0 +1,52 @@
+#vectores
+a<- 2+3 #Vector de longitud 1
+b<- c(3,4) - c(6,1) # está diferencia genera un vector 2 entradas
+b
+c<- c(4,5,6) * c(5,2,1) # Vector 3 entradas
+c # Hace la operación entrada por entrada
+d<- c(1:50, 7, 99)
+length(d)
+length(c)
+#Operaciones logicas con vectores 
+d>= 45 #Indica que elementos del vector son mayores o iguales a 45
+d== 50 #Indica que elementos del vector son iguales a 45
+d!= 35 #Indica que elementos del vector son diferentes a 35
+
+#sucesiones con operadores y funciones 
+z<- seq(0, 30, 3)
+z
+seq(from=0, to=30, by=3)
+seq(by=3, to=30, from=0)
+seq(from=1, to=30, by=3)
+seq(10)
+seq(2,10)
+seq(from=3,to=10)
+#Si no colocamos cada cuanto queremos que sea la secuencia R determina que sera de 1
+secuancia<- seq(1,10, by=1)
+secuancia2<- seq(0,100, by=10)
+sec2<- seq(300,130, by=3)#Error
+sec2<- seq(300,130, by=-3)#Inicia al reves, comienza en 300 y baja de 3 en 3 hasta 130
+
+#33 muestras#
+ingreso <- sample(20000:50000,100)
+(ingreso <- sample(20000:50000,100))#Con doble parentesis no solo ejecuta la acción sino que también la genera en la consola de R
+ingreso >= 40000
+
+aleatorios   <- sample(1:10,20, replace=TRUE)
+(aleatorios   <- sample(1:10,20, replace=TRUE))
+
+#Para seleccionar la posición de un vector 
+ingreso [50]
+ingreso[73]
+ingreso [c(30,50,70)]
+ingreso [seq(20,50,10)]
+ingreso [30:43]
+ingreso [ingreso>40000]
+ingreso [ingreso<22000]
+ingreso [ingreso>20000 & ingreso<30000]
+#|=o, &=y
+
+ #3 repetir#
+ss <- c(5, -7, 9)
+rr <- rep(ss, times =5)
+rr
